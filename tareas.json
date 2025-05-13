@@ -1,0 +1,10 @@
+{
+    "tareas": [
+        {
+            "id": 1,
+            "titulo": "Tarea 1",
+            "descripcion": "Descripcion de la tarea 1",
+            "completada": false
+        }
+    ]
+}
