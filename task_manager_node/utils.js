@@ -3,6 +3,10 @@ const fs = require('fs')
 const tareas_json = require('./tareas.json')
 
 const listarTareas = () => {
+    if (tareas_json.tareas.length === 0) {
+        console.log("No hay tareas para mostrar")
+        return
+    }
     console.log("Listado de tareas:")
     console.log("-------------------------------\n")
     for (let i = 0; i < tareas_json.tareas.length; i++) {

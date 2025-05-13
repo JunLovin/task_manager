@@ -6,6 +6,8 @@ def listar_tareas():
     with open('tareas.json') as tareas_json:
         # ? Guardo la información del archivo en una variable
         tareas = json.load(tareas_json)
+        if len(tareas['tareas']) == 0:
+            return "No hay tareas."
         #? Imprimo las tareas con su ID, nombre y descripción
         print("----------TAREAS----------")
         for tarea in tareas['tareas']:
